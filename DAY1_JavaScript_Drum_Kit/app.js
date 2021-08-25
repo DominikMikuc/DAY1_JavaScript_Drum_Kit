@@ -13,6 +13,7 @@ function playSound({ keyCode }) {
   key.classList.add('playing');
   audio.play();
 }
-  
+
+const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', playSound);
