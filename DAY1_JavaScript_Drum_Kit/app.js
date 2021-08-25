@@ -1,11 +1,3 @@
-// function removeTransition(e) {
-//   if (e.propertyName !== 'transform') {
-//     return
-//   } else {
-//     e.target.classList.remove('playing');
-//   }
-// }
-
 function removeTransition({propertyName, target}) {
   if (propertyName === 'transform') 
     target.classList.remove('playing');
