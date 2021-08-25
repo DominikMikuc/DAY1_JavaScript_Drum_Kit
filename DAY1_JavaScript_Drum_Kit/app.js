@@ -1,4 +1,4 @@
-// function removeTransiton(e) {
+// function removeTransition(e) {
 //   if (e.propertyName !== 'transform') {
 //     return
 //   } else {
@@ -6,7 +6,7 @@
 //   }
 // }
 
-function removeTransiton({propertyName, target}) {
+function removeTransition({propertyName, target}) {
   if (propertyName === 'transform') 
     target.classList.remove('playing');
 }
@@ -24,5 +24,5 @@ function playSound(e) {
   }
 }
 
-keys.forEach(key => key.addEventListener('transitionend', removeTransiton));
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', playSound);
